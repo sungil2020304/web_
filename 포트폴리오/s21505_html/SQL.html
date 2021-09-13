@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>포트폴리오</title>
+<link rel="stylesheet" href="./css/style.css">
+</style>
+</head>
+<body>
+    <main class="section">
+      <iframe src="./layout/header.html" style="width:100%; height:120px; border:none"></iframe>
+      <h1 class="title">SQL</title>
+    <div id="sql">
+with zxc as
+(select &p1 as num from dual)
+select trunc(num/3600)||'시간'||
+mod(trunc(num/60),60)||'분'||mod(num,60)||'초' from zxc;
+<h2>with 문 활용 시간구하기</h2>
+   </div>
+   <div id="sql1">
+with zxc as
+(select &p1 as num1, &p2 as num2 from dual)
+select MAX(level) as gcm from zxc
+where mod(num1,level) = 0 and mod(num2,level)=0
+connect by level <=num2;
+<h2>with문 활용 최대공약수구하기</h2>
+</div>
+<div id="sql2">
+with zxc as
+(select &p1 as num1, &p2 as num2 from dual)
+select level as lcm from zxc
+where mod(num1,level)= 0 and mod(num2,level)= 0 
+connect by level <=num2;
+<h2>with문 활용 최소공배수구하기</h2>
+</div>
+<div id="sql3">
+create sequence custno_seq
+  start with 200001
+  increment by 1
+  nocycle;
+<h2>시퀀스문</h2>
+</div>
+<div id="sql4">
+select custno, custname, case when grade = 'A' then 'VIP'
+when grade = 'B' then '일반'
+else '일반'
+end grade from member_table_02;
+<h2>case문</h2>
+</div>
+<div id="sql5">
+insert into member_table_02 values
+(custno_seq.nextval,'김행복','010-1111-2222','서울 동대문구 휘경1동','20151202,'A','01');
+<h2>insert문</h2>
+</div>
+<div id="sql6">
+update money_tbl_02
+set (amount=2, price = pcost*amount) = (select custno, saleno, pcost, amount, pcost * amount , 
+pcode, sdate from  money_tbl_02 where custno = '200004' and saleno = '20010008');
+<h2>update문</h2>
+</div>
+<div id="sql7">
+select emp_id 사원번호, emp_name 성명, nvl(emp_pay,0) 시간급여, 
+AVG_PAY1, CNT1, AVG_PAY2 , CNT2
+from emp_master,(select avg(emp_pay) AVG_PAY1, count(emp_pay) CNT1,
+avg(nvl(emp_pay,0)) AVG_PAY2,
+count(nvl(emp_pay,0)) as CNT2 from emp_master)
+where nvl(emp_pay,0) <= (select avg(nvl(emp_pay,0)) from emp_master);
+<h2>서브쿼리문으로 평균 급여구하기</h2>
+</div>
+<div id="sql8">
+select rownum,a.*
+from (select custno 고객번호 ,sum(price) 합산가격 ,count(price) 구매건수 
+from money_tbl_02 group by custno
+order by sum(price) desc) a;
+<h2>rownum 활용</h2>
+</div>
+    </main>
+</body>
+</html>

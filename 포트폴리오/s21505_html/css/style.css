@@ -1,0 +1,363 @@
+* { margin:0; padding: 0; }
+ul, li { list-style: none; }
+a { color: black; text-decoration: none;}
+#header {
+	width: 54%;
+	height: 80px;
+	//background-color: blue;
+            //background-color: blue;
+            //background-color: #B2CCFF;
+            //background-color: rgb(0,0,256);
+	//background-color: #0000ff;
+	color: black;
+	text-align: right;
+	line-height: 80px;
+	position:relative;
+	top: -64px;
+	
+}
+.header_nav a:hover {
+	color : gold;
+	font-weight : bold;
+	float: right;
+}
+#nav {
+	width: 100%;
+	height: 50px;
+	//background-color: #6094ff;
+	background-color: rgb(255,255,255);
+	line-height: 50px;  
+	//border: 1px solid black;
+	
+}	
+#nav ul li {
+	//display: inline-block;
+	float: right;
+	padding: 0 20px;
+}
+#div {
+	width: 100%;
+	//border: 1px solid black;
+}
+.navs {
+	width: 100%;
+	height: 80px;
+	line-height: 80px;	
+	//background-color : MidnightBlue;
+	font-size : 18px;
+	font-weight : bold;	
+	//border: 1px solid black;
+	position:relative;
+	top: -80px;
+}
+.navs {
+	text-align : center;
+	
+}
+.navs li {
+	margin : 0 10px;
+	display : inline-block;
+}
+.navs li a {
+	color : black;
+	display : block;
+	width : 150px;
+	height : 60px;
+	line-height : 60px;
+}
+.navs li a:hover {
+	color : black;
+	background-color : SkyBlue;
+}
+.section {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.1);
+	//border: 1px solid black;
+}	
+.title {
+	padding: 30px;
+	text-align: center;
+	position: relative;
+	top: -60px;
+}
+
+#footer {
+            position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+}
+
+.login {
+	position: relative;
+	top: -70px;
+	border:1px solid;
+	padding:10px;
+	text-align: center;
+	background-color: #86E57F;
+}
+
+#div2 {
+    position: relative;
+    height: 100%;
+    
+}
+
+#con {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 460px;
+}
+
+
+
+
+/* 입력폼 */
+
+
+h3 {
+    margin: 9px 0 8px;
+   
+    font-weight: 700;
+}
+
+
+.box {
+    display: block;
+    width: 100%;
+    height: 51px;
+    border: solid 1px #dadada;
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+}
+
+.ac {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 29px;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+}
+
+input {
+    font-family: Dotum,'돋움',Helvetica,sans-serif;    
+}
+
+.box.int_id {
+    padding-right: 110px;
+}
+
+.box.int_pass {
+    padding-right: 40px;
+}
+
+.box.int_pass_check {
+    padding-right: 40px;
+}
+
+.step_url {
+    right: 13px;
+    font-size: 15px;
+    color: #8e8e8e;
+}
+
+.pswdImg {
+    width: 18px;
+    height: 20px;
+    display: inline-block;
+    right: 16px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+
+.bot {
+    margin: 30px 0 91px;
+}
+
+#botJoin {
+    width: 100%;
+    padding: 21px 0 17px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: #6799FF;
+    font-size: 20px;
+    font-weight: 400;
+}
+#menu {	
+     border: 2px solid black;
+     border-radius: 7%;
+     width: 41%;
+     height: 50%;
+     position: relative;
+     text-align: center;
+     left: 100px;
+      background-color: white;
+}
+#menu1 {
+     border: 2px solid black;
+     border-radius: 7%;
+     width: 41%;
+     height: 50%;
+     position: fixed;
+     top: 225px;
+     right: 100px;
+     text-align: center;
+     background-color:white;
+}
+#java1 {
+ border: 1px solid black;
+  width: 400px;
+  height: 500px;
+  position: fixed;
+  top: 200px;
+  left: 100px;
+  text-align: center;
+  font-size: 20px;
+  background-color:#B2EBF4;
+}
+#java2 {
+ border: 1px solid black;
+  width: 400px;
+  height: 500px;
+  position: fixed;
+  top: 200px;
+  left: 550px;
+  text-align: center;
+  font-size: 20px;
+   background-color:#B2EBF4;
+}
+#java3 {
+  border: 1px solid black;
+  width: 400px;
+  height: 500px;
+  position: fixed;
+  top: 200px;
+  left: 1000px;
+  text-align: center;
+  font-size: 20px;
+   background-color:#B2EBF4;
+}
+#java4 {
+  border: 1px solid black;
+  width: 400px;
+  height: 500px;
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  text-align: center;
+  font-size: 20px;
+   background-color:#B2EBF4;
+}
+#sql {
+ border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  position: fixed;
+  top: 200px;
+  left: 150px;
+  text-align: center;
+  font-size: 20px;
+  background-color:#B2EBF4;
+}
+#sql1 {
+ border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  position: fixed;
+  top: 200px;
+  left: 650px;
+  text-align: center;
+  font-size: 20px;
+  background-color:#B2EBF4;
+}
+#sql2 {
+ border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  position: fixed;
+  top: 200px;
+  left: 1150px;
+  text-align: center;
+  font-size: 20px;
+  background-color:#B2EBF4;
+}
+#sql3 {
+ border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  position: fixed;
+  top: 402px;
+  left: 150px;
+  text-align: center;
+  font-size: 20px;
+  background-color:#B2EBF4;
+}
+#sql4 {
+ border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  position: fixed;
+  top: 402px;
+  left: 650px;
+  text-align: center;
+  font-size: 20px;
+  background-color:#B2EBF4;
+}
+#sql5 {
+ border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  position: fixed;
+  top: 402px;
+  left: 1150px;
+  text-align: center;
+  font-size: 20px;
+  background-color:#B2EBF4;
+}
+#sql6 {
+ border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  position: fixed;
+  top: 602px;
+  left: 150px;
+  text-align: center;
+  font-size: 20px;
+  background-color:#B2EBF4;
+}
+#sql7 {
+ border: 1px solid black;
+  width: 500px;
+  height: 260px;
+  position: fixed;
+  top: 602px;
+  left: 650px;
+  text-align: center;
+  font-size: 20px;
+  background-color:#B2EBF4;
+}
+#sql8 {
+ border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  position: fixed;
+  top: 602px;
+  left: 1150px;
+  text-align: center;
+  font-size: 20px;
+  background-color:#B2EBF4;
+}
